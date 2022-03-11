@@ -3,45 +3,63 @@
     background-color: $color__background-footer;
     padding: 15px;
 
-    &__menu{ // .site__footer__menu
+    &__colonne{
+      display: flex;
+      justify-content: space-between;
+      section{
+        flex: 0 0 30%;
+      }
+      .footer__adresse{}
+      .footer__article {}
+      .footer_lien{}
+    }
+
+    &__ligne {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      section {
+        text-align: center;
+      }
+      .footer__auteur{}
+      .footer__description{}
+      .footer__recherche{}
+      .footer__copyright{}
+
+    }
+}
+
+  .footer__menu{
+    &__nav{ // .site__footer__menu
 
       &__ul{ // .site__footer__menu__ul
           display : grid;
-          grid-template-columns: 1fr 1fr;
+          grid-template-columns: 1fr 1fr 1fr;
           list-style-type: none;
           justify-content: center;
           width: 40%;
           margin: 2% auto;
           .menu-item{ // .site__footer__menu__ul .menu-item
-              margin : 10px 5px;
+            width: 200px;
+            height: 50px;
+            margin : 4px;
 
-            a{ // .site__footer__menu__ul .menu-item a
-              display : flex;
-              align-items: center;
-              padding : 10px;
-              svg { // .site__footer__menu__ul .menu-item a svg
-               // color: aqua;
+              a{ // .site__footer__menu__ul .menu-item a
+                display : flex;
+                align-items: center;
+                padding : 10px;
+                svg { // .site__footer__menu__ul .menu-item a svg
+                // color: aqua;
+                }
+                &:hover{
+                    svg { // .site__footer__menu__ul .menu-item a svg
+                        // color: $color__link__footer-hover;
+                        }
+                }
               }
-              &:hover{
-                  svg { // .site__footer__menu__ul .menu-item a svg
-                       // color: $color__link__footer-hover;
-                      }
-            }
-            }
             }
       }
     }
   }
-.footer__titre,
-.footer__presentation,
-.footer__author {
-  color: $color__font-footer;
-  text-align: center;
-}
-
-.footer__recherche {
-  width: fit-content;
-  margin: auto;
-}
 
 

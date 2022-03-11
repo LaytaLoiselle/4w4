@@ -1,4 +1,4 @@
-# Exercice 2 - 4w4 - Conception d'interface et développement Web
+# TP1 - 4w4 - Conception d'interface et développement Web
 ### Auteur : **Isaac Loiselle**
 ### Date de remise : 
 

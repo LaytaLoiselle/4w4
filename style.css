@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*
-theme name: Ex2 Isaac Loiselle
+theme name: TP1 Isaac Loiselle
 Author: Isaac Loiselle
 Author URI: https://github.com/LaytaLoiselle/2022-4w4.git
 Description: Voici le thème de l'exercice 2 en 4w4
@@ -542,7 +542,7 @@ COMPOSANTES
 .util {
   display: flex;
   flex-direction: column;
-  margin: 1% 1% 1% auto;
+  margin: 2% 1% 2% auto;
 }
 
 .util__lien {
@@ -610,35 +610,44 @@ COMPOSANTES
   padding: 15px;
 }
 
-.site__footer__menu__ul {
+.site__footer__colonne {
+  display: flex;
+  justify-content: space-between;
+}
+
+.site__footer__colonne section {
+  flex: 0 0 30%;
+}
+
+.site__footer__ligne {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.site__footer__ligne section {
+  text-align: center;
+}
+
+.footer__menu__nav__ul {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
   justify-content: center;
   width: 40%;
   margin: 2% auto;
 }
 
-.site__footer__menu__ul .menu-item {
-  margin: 10px 5px;
+.footer__menu__nav__ul .menu-item {
+  width: 200px;
+  height: 50px;
+  margin: 4px;
 }
 
-.site__footer__menu__ul .menu-item a {
+.footer__menu__nav__ul .menu-item a {
   display: flex;
   align-items: center;
   padding: 10px;
-}
-
-.footer__titre,
-.footer__presentation,
-.footer__author {
-  color: white;
-  text-align: center;
-}
-
-.footer__recherche {
-  width: fit-content;
-  margin: auto;
 }
 
 .cours__titre__contenu {
@@ -725,18 +734,32 @@ ANIMATION
 LAYOUT
 --------------------------------------------------------- */
 /*
-theme name: Lab 2 Lemieux Florence
+theme name: Exercice 2 Isaac Loiselle
 */
 .site {
   display: grid;
   gap: 10px;
-  background-color: #6f9565;
+  background-color: #658a95;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.home:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #4b4b4b;
+  clip-path: polygon(54% 0, 100% 0, 100% 100%, 0% 100%);
+  z-index: -1;
 }
 
 .site__header {
   grid-area: header;
-  background-color: #443936;
+  background-color: rgba(68, 57, 54, 0.5);
   align-items: flex-start;
   flex-direction: column;
 }
@@ -752,7 +775,7 @@ theme name: Lab 2 Lemieux Florence
 
 .site__main {
   grid-area: main;
-  background-color: #c0eca7;
+  background-color: rgba(192, 236, 167, 0.7);
 }
 
 .site__footer {
