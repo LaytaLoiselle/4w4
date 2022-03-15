@@ -49,6 +49,8 @@ theme name: Exercice 2 Isaac Loiselle
     background-color: $color__background-footer;
 }
 
+// configuration mobile
+
 .site {
 	display: grid;
 	grid-template-columns: auto;
@@ -67,6 +69,16 @@ theme name: Exercice 2 Isaac Loiselle
             "header header"
             "sidebar main"
             "footer footer";
+    }
+
+    .home {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-areas:
+            "sidebar"
+            "header"
+            "main"
+            "footer";
     }
 
     .site__header{
