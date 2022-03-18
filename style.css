@@ -555,14 +555,6 @@ COMPOSANTES
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.site__header .menu-principal-container {
-  margin-top: 10px;
-  width: 300px;
-  z-index: 3;
-  position: absolute;
-  left: -300px;
-}
-
 .util {
   display: flex;
   flex-direction: column;
@@ -596,19 +588,12 @@ COMPOSANTES
   transform: rotate(90deg);
 }
 
-#chk-burger:checked ~ .menu-principal-container {
-  transform: translateX(0px);
-  box-shadow: 5px 5px 10px;
+.menu-principal-container {
+  display: none;
 }
 
-.menu-principal-container {
+#chk-burger:checked ~ .menu-principal-container {
   display: block;
-  position: absolute;
-  margin-top: 10px;
-  width: 300px;
-  z-index: 3;
-  transform: translateX(-300px);
-  transition: all 0.4s;
 }
 
 .menu {
@@ -634,6 +619,24 @@ COMPOSANTES
 }
 
 @media screen and (min-width: 800px) {
+  .home .menu-principal-container {
+    position: absolute;
+    margin-top: 10px;
+    width: 300px;
+    z-index: 3;
+    left: -300px;
+    transition: all 0.4s;
+  }
+  #chk-burger:checked ~ .menu-principal-container {
+    transform: translateX(300px);
+    box-shadow: 5px 5px 10px;
+  }
+  .site .menu-principal-container {
+    display: block;
+  }
+  .site #burger {
+    display: none;
+  }
   .home #burger {
     display: block;
   }
@@ -692,6 +695,7 @@ COMPOSANTES
 .recherche {
   position: relative;
   display: flex;
+  width: 350px;
 }
 
 .recherche__input {
