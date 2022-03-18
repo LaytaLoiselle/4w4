@@ -27,6 +27,15 @@
       font-size: clamp(1rem,2vw,3rem);
       font-family: $font__main;
     }
+
+    .menu-principal-container{
+      margin-top: 10px;
+      width: 300px;
+      z-index: 3;
+      position: absolute;
+      left: -300px;
+    }
+
   }
 
   .util {
