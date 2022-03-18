@@ -1,11 +1,15 @@
 .site__footer {
     font-family: $font__titre;
     background-color: $color__background-footer;
-    padding: 15px;
+    padding: 3% 15px;
 
     &__colonne{
       display: flex;
+      flex-direction: column;
       justify-content: space-between;
+      @media screen and (min-width : $largeur__media--tablette){
+        flex-direction: row;
+      }
       section{
         display: flex;
         justify-content: center;
