@@ -5,7 +5,6 @@ theme name: Exercice 2 Isaac Loiselle
 .site {
     display: grid;
     gap: 10px;
-    //background-color: rgb(122, 176, 207);
     background-color: $color__background-body-clip;
     font-family: $font__main;
 }
@@ -25,13 +24,7 @@ theme name: Exercice 2 Isaac Loiselle
 }
 
 .site__header{
-    grid-area: header;  
-    background-color: rgba($color__background-header,.5);
-    align-items: flex-start;
-    flex-direction: column;
-    .util {
-        margin-left: 0;
-    }
+    grid-area: header; 
 }
 
 .site__barre{
@@ -80,15 +73,6 @@ theme name: Exercice 2 Isaac Loiselle
             "main"
             "footer";
     }
-
-    .site__header{
-        flex-direction: row;
-        .util {
-            margin-left: auto;
-        }
-    }
-
-
 }
 
 
