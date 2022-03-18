@@ -23,11 +23,9 @@
     <h2 class="header__description"><?php bloginfo('description'); ?></h2>
     </section>
     <section class="util">
-        <div class="util_lien">
-            <a href="#">
-            <svg width="36" height="36" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" color="white"><path d="M0 0h24v24H0z" fill="none"></path><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"></path></svg>
-            </a>
-        </div>
+        <div class="util_lien"></div>
+        <?php get_sidebar( 'entete_1' ); ?>
+        
         <?php get_search_form(); ?>
     </section>
 </header>
