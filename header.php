@@ -23,9 +23,9 @@
     <h2 class="header__description"><?php bloginfo('description'); ?></h2>
     </section>
     <section class="util">
-        <div class="util_lien"></div>
+        <div class="util_lien">
         <?php get_sidebar( 'entete_1' ); ?>
-        
+        </div>
         <?php get_search_form(); ?>
     </section>
 </header>

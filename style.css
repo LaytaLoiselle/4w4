@@ -662,6 +662,7 @@ COMPOSANTES
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: white;
 }
 
 .site__footer__ligne section {
