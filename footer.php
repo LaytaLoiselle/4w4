@@ -1,12 +1,12 @@
 <footer class="site__footer">
     <div class="site__footer__colonne">
-        <section class="footer__article"> 	
+        <section> 	
             <?php get_sidebar( 'footer_colonne_1' ); ?>
         </section>
-        <section class="footer__lien">
+        <section>
         <?php get_sidebar( 'footer_colonne_2' ); ?>
         </section>
-        <section class="footer__adresse">
+        <section>
         <?php get_sidebar( 'footer_colonne_3' ); ?>
         </section> 
     </div>
