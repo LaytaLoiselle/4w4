@@ -17,13 +17,6 @@
     <hr>
 
     <div class="site__footer__ligne">
-        <section class="footer__description">
-        <?php get_sidebar( 'footer_ligne_1' ); ?>
-            <!-- <p> 4w4 -conception d'interface et développement web -TIM- Collège de Maisonneuve </p> -->
-        </section>
-        <section class="footer_sociaux">
-        <?php get_sidebar( 'footer_ligne_2' ); ?>
-        </section>
 
         <section class="footer__menu">
         <?php
@@ -38,10 +31,17 @@
         <div class="footer__recherche">
         </section>
 
-        <section class="footer_sociaux">
-            <?php get_sidebar( 'footer_ligne_3' ); ?>
+        <section">
+        <?php get_sidebar( 'footer_ligne_1' ); ?>
+            <!-- <p> 4w4 -conception d'interface et développement web -TIM- Collège de Maisonneuve </p> -->
+        </section>
+        <section>
+        <?php get_sidebar( 'footer_ligne_2' ); ?>
         </section>
 
+        <section>
+            <?php get_sidebar( 'footer_ligne_3' ); ?>
+        </section>
         
         <section class="footer__recherche">
                 <?php get_search_form(); ?>
@@ -55,8 +55,6 @@
             <p>Auteur : Isaac Loiselle</p>
     </section>
     </div>
-
-
 
 </footer>
 </body>
