@@ -55,12 +55,15 @@
                 display : flex;
                 align-items: center;
                 padding : 10px;
+                transition: 0.25s ease;
                 svg { // .site__footer__menu__ul .menu-item a svg
-                // color: aqua;
+                color: $color__link__footer;
                 }
                 &:hover{
-                    svg { // .site__footer__menu__ul .menu-item a svg
-                        // color: $color__link__footer-hover;
+                  transform: scale(0.95);
+                  color: $color__link__footer-hover; 
+                    svg {
+                        color: $color__link__footer-hover;
                         }
                 }
               }
