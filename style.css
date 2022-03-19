@@ -2,7 +2,7 @@
 /*
 theme name: TP1 Isaac Loiselle
 Author: Isaac Loiselle
-Author URI: https://github.com/LaytaLoisselle/4w4.git
+Author URI: https://github.com/LaytaLoiselle/4w4.git
 Description: Voici le thème de l'exercice 2 en 4w4
 Version: 1.0.0
 License URI: LICENSE
@@ -775,10 +775,10 @@ ANIMATION
 
 @keyframes anime-entete1 {
   0% {
-    transform: translateX(-110%);
+    transform: translate(-110%, 70px);
   }
   100% {
-    transform: translateX(0%);
+    transform: translate(0%, -70px);
   }
 }
 

@@ -20,11 +20,11 @@
 
 @keyframes anime-entete1 {
     0% {
-        transform: translateX(-110%);
+        transform: translate(-110%,70px);
     }
 
     100% {
-        transform: translateX(0%);
+        transform: translate(0%,-70px);
     }
 }
 
