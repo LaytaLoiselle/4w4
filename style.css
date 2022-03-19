@@ -700,11 +700,17 @@ h3 {
 
 .footer__menu__nav__ul {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   list-style-type: none;
   justify-content: center;
   width: 40%;
   margin: 2% auto;
+}
+
+@media screen and (min-width: 800px) {
+  .footer__menu__nav__ul {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .footer__menu__nav__ul .menu-item {
@@ -740,7 +746,13 @@ h3 {
 .recherche {
   position: relative;
   display: flex;
-  width: 350px;
+  width: 100%;
+}
+
+@media screen and (min-width: 800px) {
+  .recherche {
+    width: 350px;
+  }
 }
 
 .recherche__input {

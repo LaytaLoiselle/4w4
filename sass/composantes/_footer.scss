@@ -28,11 +28,6 @@
       flex-direction: column;
       align-items: center;
       color: white;
-      .footer__auteur{}
-      .footer__description{}
-      .footer__recherche{}
-      .footer__copyright{}
-
     }
 }
 
@@ -41,7 +36,10 @@
 
       &__ul{ // .site__footer__menu__ul
           display : grid;
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
+          @media screen and (min-width : $largeur__media--tablette){
+          grid-template-columns: repeat(4, 1fr);
+        }
           list-style-type: none;
           justify-content: center;
           width: 40%;

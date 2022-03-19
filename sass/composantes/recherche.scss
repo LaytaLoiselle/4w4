@@ -1,7 +1,11 @@
 .recherche {
     position: relative;
     display: flex;
-    width: 350px;
+    width: 100%;
+    @media screen and (min-width : $largeur__media--tablette){
+        width: 350px;
+      }
+    
     &__input{
         padding: 8px;
         flex: 1;
