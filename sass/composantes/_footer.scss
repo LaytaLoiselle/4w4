@@ -2,6 +2,8 @@
     font-family: $font__titre;
     background-color: $color__background-footer;
     padding: 3% 15px;
+    text-align: center;
+    color: white;
 
     &__colonne{
       display: flex;
@@ -26,9 +28,6 @@
       flex-direction: column;
       align-items: center;
       color: white;
-      section {
-        text-align: center;
-      }
       .footer__auteur{}
       .footer__description{}
       .footer__recherche{}

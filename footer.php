@@ -1,4 +1,6 @@
 <footer class="site__footer">
+<h3>Travaux en Création et Animation 3d</h3>
+<hr>
     <div class="site__footer__colonne">
         <section> 	
             <?php get_sidebar( 'footer_colonne_1' ); ?>
@@ -10,6 +12,9 @@
         <?php get_sidebar( 'footer_colonne_3' ); ?>
         </section> 
     </div>
+
+    <h3>Pages supplémentaires</h3>
+    <hr>
 
     <div class="site__footer__ligne">
         <section class="footer__description">
@@ -41,6 +46,7 @@
         <section class="footer__recherche">
                 <?php get_search_form(); ?>
         </section>
+
 
         <section class="footer__copyright">
             <p>&copy; Tout droit réservé -TIM- Collège de Maisonneuve</p>
