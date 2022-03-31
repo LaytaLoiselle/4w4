@@ -23,33 +23,37 @@
     display: block;
 }
 
-.menu{
-    list-style-type: none;
-    margin : 0;
-    padding :0;
-}
-
-.menu-item{
-    margin:0;
-    padding : 0;
-    a{
-        display : block;
-        text-decoration: none;
-        padding : 4px;
-        background-color: $color__background-link;
-        &:hover {
-            background-color: $color__background-link-hover;
-        }
+.menu-principal-container {
+    .menu{
+        list-style-type: none;
+        margin : 0;
+        padding :0;
     }
-
+    
+    .menu-item{
+        margin:0;
+        padding : 0;
+        a{
+            display : block;
+            text-decoration: none;
+            padding : 4px;
+            background-color: $color__background-link;
+            &:hover {
+                background-color: $color__background-link-hover;
+            }
+        }
+    
+    }
+    
+    .cours_1 a {
+        font-weight: bold;
+        border-bottom: 2px solid white;
+        color: black;
+        background-color: rgb(168, 206, 147)
+    }
 }
 
-.cours_1 a {
-    font-weight: bold;
-    border-bottom: 2px solid white;
-    color: black;
-    background-color: rgb(168, 206, 147)
-}
+
 
 @media screen and (min-width : $largeur__media--tablette){
     

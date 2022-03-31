@@ -19,15 +19,6 @@
       padding: 10px;
     }
 
-    .header__titre {
-      font-size: clamp(1.5rem,3vw,6rem);
-      font-family: $font__titre;
-    }
-    .header__description {
-      font-size: clamp(1rem,2vw,3rem);
-      font-family: $font__main;
-    }
-
   }
 
   .util {
