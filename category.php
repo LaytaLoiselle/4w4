@@ -11,26 +11,13 @@
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
-                <?php
-                    $categories = get_the_category();
-                    //var_dump($categories);
-                ?>
-                <article class="formation__cours <?php echo $categories[1] -> slug; ?>">
-                        <?php
-                        $titre = get_the_title();
-                        $titreFiltreCours = substr($titre, 7, -6);
-                        $nbHeures = substr($titre, -6);
-                        $sigleCours = substr($titre, 0, 7);
-                        $descCours = get_the_excerpt();
-                        ?>
-                    <a href="<?php echo get_permalink() ?>">
-                        <h3 class="cours__titre"> <?= $titreFiltreCours; ?></h3>
-                    </a>
-                        <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
-                        <p class="cours__sigle"><?= $sigleCours; ?> </p>
-                        <?php the_post_thumbnail("thumbnail"); ?>
-                        <p class="cours__desc"> <?= $descCours; ?></p>
-                    </article>
+                    <?php
+                    if(is_category(array('cours','web','jeu','utilitaire','design','creation-3d','video'))):
+                    get_template_part('gabarit/content','cours');
+                    else:
+                    get_template_part('gabarit/content','macrame'); 
+                    endif
+                    ?>
                 <?php endwhile ?>
                 <?php endif ?>
         </div>
