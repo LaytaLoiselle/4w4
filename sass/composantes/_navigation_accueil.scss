@@ -1,0 +1,26 @@
+.menu-menu_accueil-container {
+    .menu{
+        display: flex;
+        justify-content: space-around;
+        .menu-item {
+            width: 15%;
+            padding: 10px;
+            background-color: $color__bouton__background;
+            list-style: none;
+            a{
+                color: $color__bouton__color;
+                font-size: 1.5rem;
+                .menu-item-description{
+                    font-size: 1rem;
+                }
+            }
+
+            &:hover {
+                background-color: $color__bouton__background--hover;
+                a{
+                    color: $color__bouton__color--hover;
+                }
+            }
+        }
+    }
+}

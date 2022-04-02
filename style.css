@@ -727,6 +727,33 @@ hr {
   }
 }
 
+.menu-menu_accueil-container .menu {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu-menu_accueil-container .menu .menu-item {
+  width: 20%;
+  background-color: #ddd;
+}
+
+.menu-menu_accueil-container .menu .menu-item a {
+  color: black;
+  font-size: 1.5rem;
+}
+
+.menu-menu_accueil-container .menu .menu-item a .menu-item-description {
+  font-size: 1rem;
+}
+
+.menu-menu_accueil-container .menu .menu-item:hover {
+  background-color: #513ebd;
+}
+
+.menu-menu_accueil-container .menu .menu-item:hover a {
+  color: white;
+}
+
 .menu-categorie_cours-container .menu {
   display: flex;
   list-style-type: none;
