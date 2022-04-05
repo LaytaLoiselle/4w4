@@ -2,6 +2,18 @@
     .menu{
         display: flex;
         justify-content: space-around;
+        .accueil_cours .menu-item-icone {
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=versions-bold");
+        }
+        .accueil_prof .menu-item-icone {
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=smiley-bold");
+        }
+        .accueil_aide .menu-item-icone {
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup-bold");
+        }
+        .accueil_etudiant .menu-item-icone {
+            background-image: url("https://s2.svgbox.net/octicons.svg?ic=people-bold");
+        }
         .menu-item {
             width: 15%;
             padding: 10px;
@@ -12,6 +24,12 @@
                 font-size: 1.5rem;
                 .menu-item-description{
                     font-size: 1rem;
+                }
+
+                .menu-item-icone {
+                    border: 1px solid #aaa;
+                    width: 2rem;
+                    height: 2rem;
                 }
             }
 
