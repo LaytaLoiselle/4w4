@@ -1,4 +1,4 @@
-.menu-menu_accueil-container {
+.menu-accueil-container {
     .menu{
         display: flex;
         justify-content: space-around;
@@ -20,8 +20,17 @@
             background-color: $color__bouton__background;
             list-style: none;
             a{
+                display: flex;
+                flex-direction: column;
                 color: $color__bouton__color;
                 font-size: 1.5rem;
+                height: 100%;
+                justify-content: space-between;
+                align-items: center;
+                hr{
+                    width: 90%;
+                }
+
                 .menu-item-description{
                     font-size: 1rem;
                 }
@@ -30,6 +39,10 @@
                     border: 1px solid #aaa;
                     width: 2rem;
                     height: 2rem;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: cover;
+                    margin-top: auto;
                 }
             }
 

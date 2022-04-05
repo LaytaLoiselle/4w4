@@ -1,4 +1,4 @@
-# TP1 - 4w4 - Conception d'interface et développement Web
+# ex3 - 4w4 - Conception d'interface et développement Web
 ### Auteur : **Isaac Loiselle**
 ### Date de remise : 
 
