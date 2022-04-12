@@ -5,8 +5,9 @@ h2 {
     font-size: clamp(1rem,2vw,3rem);
 }
 h3 {
-    font-size: 2.8rem;
+    font-size: 2rem;
     margin-top: 3%;
+    
 }
 h4 {
     font-size: 2.3rem;
@@ -29,6 +30,7 @@ h1,h2 {
 h3,h4 {
     color: $color__titre__secondaire;
     font-family: $police_titre__secondaire;
+    text-decoration: underline;
 }
 
 h5,h6 {

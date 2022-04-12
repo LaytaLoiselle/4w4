@@ -2,9 +2,9 @@
 <main class="site__main">
      <?php if (have_posts()): while(have_posts()):the_post(); ?>
      <article class="cours">
-        <h1 class="cours_titre">
+        <h2 class="cours_titre">
             <?php echo get_the_title(); ?>
-        </h1>
+        </h2>
      <section class="cours_contenu">
      <?php the_post_thumbnail("thumbnail"); ?>
         <?php the_content(); ?>
