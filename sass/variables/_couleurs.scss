@@ -50,7 +50,7 @@ $color__font-footer : rgb(255, 255, 255);
 $color__bouton__color:rgb(0, 0, 0);
 $color__bouton__background:#ddd;
 $color__bouton__color--hover:rgb(255, 255, 255);
-$color__bouton__background--hover:rgb(81, 62, 189);
+$color__bouton__background--hover:#1679ab;
 $color__bouton__color--current:rgb(255, 255, 255);
 $color__bouton__background--current:rgb(81, 163, 142);
 
@@ -63,5 +63,5 @@ $color__titre__ternaire: white;
 /*----------------------Carte d'accueil-----------------------*/
 $color__carte__evenement: rgb(0, 0, 0);
 $color__carte__evenement__background: white;
-$color__carte__evenement--hover: rgb(131, 131, 131);
-$color__carte__evenement__background--hover: rgb(109, 109, 109);
+$color__carte__evenement--hover: white;
+$color__carte__evenement__background--hover: #008246;
