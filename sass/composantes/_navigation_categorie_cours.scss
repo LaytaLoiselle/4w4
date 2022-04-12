@@ -39,3 +39,22 @@
         }
     }
 }
+
+.filtre{
+    display: flex;
+    background-color: #c0eca7;
+    flex-direction: column;
+    text-align: center;
+    width: 150px;
+    box-shadow: 2px 2px 10px;
+
+    a{
+        margin-top: 2px;
+        font-weight: bolder;
+        text-decoration: none;
+
+        &:visited {
+            color:rgb(201, 201, 201);
+        }
+    }
+}
