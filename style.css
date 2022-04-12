@@ -20,6 +20,7 @@ VARIABLES
 /* ---------------- FONT */
 /*-------------Couleur bouton menu-categorie cours-------------*/
 /*-------------Couleur bouton menu-categorie cours-------------*/
+/*----------------------Carte d'accueil-----------------------*/
 /* ------------------------------------- points de rupture des media queries */
 /* ---------------------------------------------------------
 INITIALISATION
@@ -723,53 +724,51 @@ COMPOSANTES
   }
 }
 
-.menu-accueil-container .menu {
+.menu-accueil-container .menu, .menu-evenement-container .menu {
   display: flex;
   justify-content: space-around;
 }
 
-.menu-accueil-container .menu .accueil_cours .menu-item-icone {
+.menu-accueil-container .menu .accueil_cours .menu-item-icone, .menu-evenement-container .menu .accueil_cours .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=versions-bold");
 }
 
-.menu-accueil-container .menu .accueil_prof .menu-item-icone {
+.menu-accueil-container .menu .accueil_prof .menu-item-icone, .menu-evenement-container .menu .accueil_prof .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=smiley-bold");
 }
 
-.menu-accueil-container .menu .accueil_aide .menu-item-icone {
+.menu-accueil-container .menu .accueil_aide .menu-item-icone, .menu-evenement-container .menu .accueil_aide .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=thumbsup-bold");
 }
 
-.menu-accueil-container .menu .accueil_etudiant .menu-item-icone {
+.menu-accueil-container .menu .accueil_etudiant .menu-item-icone, .menu-evenement-container .menu .accueil_etudiant .menu-item-icone {
   background-image: url("https://s2.svgbox.net/octicons.svg?ic=people-bold");
 }
 
-.menu-accueil-container .menu .menu-item {
+.menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
+  list-style: none;
   width: 15%;
   padding: 10px;
-  background-color: #ddd;
-  list-style: none;
 }
 
-.menu-accueil-container .menu .menu-item a {
+.menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
   display: flex;
   flex-direction: column;
-  color: black;
   font-size: 1.5rem;
   height: 100%;
   justify-content: space-between;
   align-items: center;
 }
 
-.menu-accueil-container .menu .menu-item a hr {
+.menu-accueil-container .menu .menu-item a hr, .menu-evenement-container .menu .menu-item a hr {
   width: 90%;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-description {
+.menu-accueil-container .menu .menu-item a .menu-item-description, .menu-evenement-container .menu .menu-item a .menu-item-description {
   font-size: 1rem;
 }
 
-.menu-accueil-container .menu .menu-item a .menu-item-icone {
+.menu-accueil-container .menu .menu-item a .menu-item-icone, .menu-evenement-container .menu .menu-item a .menu-item-icone {
   border: 1px solid #aaa;
   width: 2rem;
   height: 2rem;
@@ -779,12 +778,36 @@ COMPOSANTES
   margin-top: auto;
 }
 
-.menu-accueil-container .menu .menu-item:hover {
+.menu-accueil-container .menu-item {
+  background-color: #ddd;
+}
+
+.menu-accueil-container .menu-item a {
+  color: black;
+}
+
+.menu-accueil-container .menu-item a:hover {
+  color: white;
+}
+
+.menu-accueil-container .menu-item:hover {
   background-color: #513ebd;
 }
 
-.menu-accueil-container .menu .menu-item:hover a {
-  color: white;
+.menu-evenement-container .menu-item {
+  background-color: white;
+}
+
+.menu-evenement-container .menu-item a {
+  color: black;
+}
+
+.menu-evenement-container .menu-item a:hover {
+  color: #838383;
+}
+
+.menu-evenement-container .menu-item:hover {
+  background-color: #6d6d6d;
 }
 
 .menu-categorie_cours-container .menu {
@@ -807,6 +830,14 @@ COMPOSANTES
 }
 
 .menu-categorie_cours-container .menu .menu-item:hover a {
+  color: white;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item {
+  background-color: #51a38e;
+}
+
+.menu-categorie_cours-container .menu .current-menu-item a {
   color: white;
 }
 

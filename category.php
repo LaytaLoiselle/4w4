@@ -1,5 +1,8 @@
 <?php get_header() ?>
 <main class="principal">
+
+    <a href="?cletri=title&ordre=asc">Ascendant</a>
+    <a href="?cletri=title&ordre=desc">Descandant</a>
 <?php
     wp_nav_menu(array(
         "menu" => "categorie_cours",

@@ -1,4 +1,5 @@
-.menu-accueil-container {
+.menu-accueil-container, .menu-evenement-container {
+    
     .menu{
         display: flex;
         justify-content: space-around;
@@ -15,14 +16,12 @@
             background-image: url("https://s2.svgbox.net/octicons.svg?ic=people-bold");
         }
         .menu-item {
+            list-style: none;
             width: 15%;
             padding: 10px;
-            background-color: $color__bouton__background;
-            list-style: none;
             a{
                 display: flex;
                 flex-direction: column;
-                color: $color__bouton__color;
                 font-size: 1.5rem;
                 height: 100%;
                 justify-content: space-between;
@@ -45,13 +44,38 @@
                     margin-top: auto;
                 }
             }
+        }
+        
+    }
+} //fin menu-accueil-container
 
+.menu-accueil-container {
+    .menu-item {
+        background-color: $color__bouton__background;
+        a{
+            color: $color__bouton__color;
             &:hover {
-                background-color: $color__bouton__background--hover;
-                a{
-                    color: $color__bouton__color--hover;
-                }
+                color: $color__bouton__color--hover;
             }
+        }
+        &:hover {
+                background-color: $color__bouton__background--hover;
+        }
+    }
+}
+
+.menu-evenement-container{
+    .menu-item{
+        background-color: $color__carte__evenement__background;
+        a{
+            color: $color__carte__evenement;
+            &:hover {
+                color: $color__carte__evenement--hover;
+                } 
+        }
+
+        &:hover {
+        background-color: $color__carte__evenement__background--hover;
         }
     }
 }
