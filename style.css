@@ -890,6 +890,10 @@ COMPOSANTES
   text-decoration: none;
 }
 
+.filtre a:first-of-type {
+  border-bottom: 1px solid black;
+}
+
 .filtre a:visited {
   color: #c9c9c9;
 }

@@ -53,6 +53,10 @@
         font-weight: bolder;
         text-decoration: none;
 
+        &:first-of-type {
+            border-bottom: 1px solid black;
+        }
+
         &:visited {
             color:rgb(201, 201, 201);
         }
