@@ -1,0 +1,43 @@
+h1 {
+    font-size: clamp(1.5rem,3vw,6rem);
+}
+h2 {
+    font-size: clamp(1rem,2vw,3rem);
+}
+h3 {
+    font-size: 2rem;
+    margin-top: 3%;
+    
+}
+h4 {
+    font-size: 2.3rem;
+}
+h5 {
+    font-size: 2rem;
+}
+h6 {
+    font-size: 1.5rem;
+}
+p {
+    font-size: 1rem;
+}
+
+h1,h2 {
+    color: $color__titre__principal;
+    font-family: $police_titre__principal;
+}
+
+h3,h4 {
+    color: $color__titre__secondaire;
+    font-family: $police_titre__secondaire;
+    text-decoration: underline;
+}
+
+h5,h6 {
+color: $color__titre__ternaire;
+ font-family: $police_titre__ternaire;
+}
+
+p{
+    font-family: $police_paragraphe;
+}
