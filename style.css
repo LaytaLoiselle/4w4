@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-theme name: ex3 Isaac Loiselle
+theme name: ex4 Isaac Loiselle
 Author: Isaac Loiselle
 Author URI: https://github.com/LaytaLoiselle/4w4.git
-Description: Voici le thème de l'exercice 3 en 4w4
+Description: Voici le thème de l'exercice 4 en 4w4
 Version: 1.0.0
 License URI: LICENSE
 Text Domain: cidw-4w4
@@ -785,6 +785,7 @@ COMPOSANTES
   padding: 15px;
   margin: 20px;
   box-shadow: 2px 2px 10px black;
+  transition: ease 0.1s;
 }
 
 .menu-accueil-container .menu .menu-item a, .menu-evenement-container .menu .menu-item a {
@@ -816,6 +817,7 @@ COMPOSANTES
 
 .menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
   box-shadow: 2px 2px 10px white;
+  transform: scale(1.1);
 }
 
 .menu-accueil-container .menu-item {
