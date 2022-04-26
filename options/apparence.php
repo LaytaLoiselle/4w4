@@ -29,12 +29,12 @@ $manager -> add_section("section_modifier_background_body",
 
                         /* Premiere prorpriété a modifier */
 $manager -> add_setting("couleur_background_body", 
-                        ["default" => "#fff",
+                        ["default" => "#0d3c4a",
                          "sanitize_callback" => "sanitize_hex_color"]);
 
                          /* Deuxième prorpriété a modifier */
 $manager -> add_setting("couleur_background_footer", 
-                        ["default" => "#fff",
+                        ["default" => "#0d3c4a",
                         "sanitize_callback" => "sanitize_hex_color"]);
 
 // $manager -> add_control("couleur_background_body", 
