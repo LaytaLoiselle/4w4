@@ -537,9 +537,13 @@ COMPOSANTES
 
 .site__main {
   margin: 2vw;
+  border-radius: 20px;
   background-color: #c0eca7;
-  border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
+}
+
+.site__main > div {
+  padding: 20px;
 }
 
 .formation {

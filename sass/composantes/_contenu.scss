@@ -1,8 +1,12 @@
-.site__main {
+.site__main  {
     margin: 2vw;
+    border-radius: 20px;
     background-color: $color__background-main;
-    border-radius: 5px;
     box-shadow: rgb(57, 68, 62) 1px -1px 10px;
+}
+
+.site__main > div  {
+    padding: 20px;
 }
 
 .formation {
