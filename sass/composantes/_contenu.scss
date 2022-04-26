@@ -5,10 +5,6 @@
     box-shadow: rgb(57, 68, 62) 1px -1px 10px;
 }
 
-.site__main > div  {
-    padding: 20px;
-}
-
 .formation {
     display: flex;
     flex-direction: column;
@@ -86,4 +82,8 @@
 .creation-3d {
     background-image: url('https://s2.svgbox.net/materialui.svg?ic=view_in_ar');
     
+}
+
+.padding_gauche {
+    padding: 20px;
 }

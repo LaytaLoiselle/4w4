@@ -1,5 +1,5 @@
 <footer class="site__footer">
-<h3>Travaux en Création et Animation 3d</h3>
+<h5>Travaux en Création et Animation 3d</h5>
 <hr>
     <div class="site__footer__colonne">
         <section> 	
@@ -13,7 +13,7 @@
         </section> 
     </div>
 
-    <h3>Pages supplémentaires</h3>
+    <h5>Pages supplémentaires</h5>
     <hr>
 
     <div class="site__footer__ligne">
