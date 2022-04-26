@@ -6,12 +6,14 @@ h2 {
 }
 h3 {
     font-size: 3rem;
-    color: $color__titre__secondaire;
-    font-family: $police_titre__secondaire;
-    background-color: rgba(0.9,0.0,0.9,0.8);
+    color: #1679ab;
+    font-family: "Poppins", sans-serif;
+    background-color: white;
     padding: 10px;
-    border-bottom: 10px solid black;
+    border-bottom: 8px solid #1679ab;
+    text-shadow: 1px 1px 1px black;
 }
+
 h4 {
     font-size: 1.4rem;
 }
