@@ -518,15 +518,24 @@ COMPOSANTES
 --------------------------------------------------------- */
 .boite__modale {
   position: fixed;
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  top: 10%;
+  left: 10%;
   border: 5px solid black;
   box-shadow: 8px 8px 8px black;
-  background-color: gray;
-  top: 0;
-  left: 0;
+  background-color: white;
+  border-radius: 20px;
   transform: scale(0);
   transition: all 0.5s ease-in-out;
+}
+
+.boite__modale article {
+  padding: 20px;
+}
+
+.boite__modale svg:hover {
+  color: #1679ab;
 }
 
 .boite__modale__ouvrir {
