@@ -1,7 +1,7 @@
 <?php get_header() ?>
 <main class="site__main">
     <section class="formation">
-        <h2 class="formation__titre">Liste des cours du programme TIM</h2>
+        <h3 class="formation__titre">Liste des cours du programme TIM</h3>
         <div class="formation__liste">
             <?php if (have_posts()):
                 while (have_posts()): the_post(); ?>
@@ -13,7 +13,7 @@
                         $sigleCours = substr($titre, 0, 7);
                         $descCours = get_the_excerpt();
                         ?>
-                        <h3 class="cours__titre"> <?= $titreFiltreCours; ?></h3>
+                        <h4 class="cours__titre"> <?= $titreFiltreCours; ?></h4>
                         <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>
                         <p class="cours__desc"> <?= $descCours; ?></p>
