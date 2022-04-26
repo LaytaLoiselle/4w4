@@ -16,7 +16,7 @@
                     <code class="cours__desc__complet" style="display:none"> <?= $descCours; ?> </code>
 
                     <a href="<?php echo get_permalink() ?>">
-                        <h3 class="cours__titre"> <?= $titreFiltreCours; ?></h3>
+                        <h4 class="cours__titre"> <?= $titreFiltreCours; ?></h4>
                     </a>
                         <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
                         <p class="cours__sigle"><?= $sigleCours; ?> </p>

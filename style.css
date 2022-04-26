@@ -469,8 +469,9 @@ h3 {
   font-size: 3rem;
   color: #1679ab;
   font-family: "Poppins", sans-serif;
-  background-color: black;
+  background-color: rgba(1, 0, 1, 0.8);
   padding: 10px;
+  border-bottom: 10px solid black;
 }
 
 h4 {
@@ -535,8 +536,7 @@ COMPOSANTES
 }
 
 .site__main {
-  margin: 20px;
-  padding: 3% 15px;
+  margin: 2vw;
   background-color: #c0eca7;
   border-radius: 5px;
   box-shadow: #39443e 1px -1px 10px;
