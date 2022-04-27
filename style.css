@@ -526,14 +526,14 @@ COMPOSANTES
   left: 10%;
   border: 5px solid black;
   box-shadow: 8px 8px 8px black;
-  background-color: white;
+  background-color: #efffd1;
   border-radius: 20px;
   transform: scale(0);
   transition: all 0.5s ease-in-out;
 }
 
 .boite__modale article {
-  padding: 20px;
+  padding: 20px 12%;
 }
 
 .boite__modale svg:hover {
