@@ -1,10 +1,10 @@
 .boite__modale {
+    z-index: 2;
     position: fixed;
     width: 90%;
     height: 90%;
     top: 10%;
     left:10%;
-    
     border: 5px solid black;
     box-shadow: 8px 8px 8px black;
     background-color: white;
@@ -19,6 +19,7 @@
 
     svg:hover {
         color: #1679ab;
+        cursor: pointer;
     }
 
     &__ouvrir {
@@ -32,3 +33,17 @@
         left:25%;
       }
 }
+
+.boite__modale:after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #a8ce93;
+    clip-path: circle(55.8% at 50% 50%);
+    z-index: -1;
+    }
