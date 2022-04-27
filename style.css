@@ -831,11 +831,16 @@ COMPOSANTES
   background-position: center center;
   background-size: cover;
   margin-top: auto;
+  transition: all 0.2s;
 }
 
 .menu-accueil-container .menu .menu-item:hover, .menu-evenement-container .menu .menu-item:hover {
   box-shadow: 2px 2px 10px white;
   transform: scale(1.1);
+}
+
+.menu-accueil-container .menu .menu-item:hover + .menu-item-icone, .menu-evenement-container .menu .menu-item:hover + .menu-item-icone {
+  transform: rotate(10deg);
 }
 
 .menu-accueil-container .menu-item {
