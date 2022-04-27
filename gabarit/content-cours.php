@@ -18,8 +18,8 @@
                     <a href="<?php echo get_permalink() ?>">
                         <h4 class="cours__titre"> <?= $titreFiltreCours; ?></h4>
                     </a>
-                        <div class="cours__nbre-heure"><?= $nbHeures; ?></div>
-                        <p class="cours__sigle"><?= $sigleCours; ?> </p>
+                    <p class="cours__sigle"><?= $sigleCours; ?> </p>
+                        <div class="cours__nbre-heure">-<?= $nbHeures; ?>h</div>
                         <p class="cours__dep"><?= $departement ?></p>
                         <?php the_post_thumbnail("thumbnail"); ?>
                         <p class="cours__desc"> <?= wp_trim_words($descCours,15,'<button class="cours__desc__suite" href=#> Lire la suite </button>'); ?></p> 
