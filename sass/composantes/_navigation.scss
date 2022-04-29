@@ -9,10 +9,6 @@
 }
 
 
-#chk-burger:checked ~ #burger {
-    
-}
-
 .menu-principal-container{
     display: none;
 }
@@ -22,6 +18,7 @@
 }
 
 .menu-principal-container {
+    margin-top: 60px;
     .menu{
         list-style-type: none;
         margin : 0;
@@ -57,7 +54,6 @@
     
     .home .menu-principal-container{
         position: absolute;
-        margin-top: 10px;
         width: 300px;
         z-index: 3;
         left: -300px;
@@ -73,11 +69,11 @@
         display: block;
     }
 
-    .site #burger {
+    .site .burger {
         display : none;
     }
 
-    .home #burger {
+    .home .burger {
         display : block;
     }
 }
