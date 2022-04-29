@@ -1,0 +1,51 @@
+/*
+theme name: ex4 Isaac Loiselle
+Author: Isaac Loiselle
+Author URI: https://github.com/LaytaLoiselle/4w4.git
+Description: Voici le thème de l'exercice 4 en 4w4
+Version: 1.0.0
+License URI: LICENSE
+Text Domain: cidw-4w4
+*/
+/* ---------------------------------------------------------
+VARIABLES
+--------------------------------------------------------- */
+@import "variables/couleurs";
+@import "variables/typo";
+@import "variables/structure";
+
+/* ---------------------------------------------------------
+INITIALISATION
+--------------------------------------------------------- */
+@import "initialisation/normalize";
+@import "initialisation/box-sizing";
+
+/* ---------------------------------------------------------
+ÉLÉMENTS
+--------------------------------------------------------- */
+@import "elements/links";
+@import "elements/balise";
+
+/* ---------------------------------------------------------
+COMPOSANTES
+--------------------------------------------------------- */
+@import "composantes/boite_modale";
+@import "composantes/contenu";
+@import "composantes/header";
+@import "composantes/navigation";
+@import "composantes/navigation_accueil";
+@import "composantes/navigation_categorie_cours";
+@import "composantes/footer";
+@import "composantes/single_cours";
+@import "composantes/recherche";
+
+
+/* ---------------------------------------------------------
+ANIMATION
+--------------------------------------------------------- */
+@import "animation/entete";
+
+/* ---------------------------------------------------------
+LAYOUT
+--------------------------------------------------------- */
+@import "layout/layout";
