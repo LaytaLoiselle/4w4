@@ -1,4 +1,4 @@
-<footer class="site__footer" style="background-color: <?= get_theme_mod("couleur_background_footer");?>;">
+<footer class="site__footer">
 <h5>Travaux en Création et Animation 3d</h5>
 <hr>
     <div class="site__footer__colonne">
