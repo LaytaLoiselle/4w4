@@ -8,15 +8,22 @@ function cidw_4w4_enqueue(){
     wp_enqueue_style('cidw-4w4-le-style', get_template_directory_uri() . '/style.css', array(), filemtime(get_template_directory() . '/style.css'), false);
     wp_enqueue_style('cidw-4w4-police-google',"https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins&family=Roboto&display=swap",false);
     
-    wp_enqueue_script( 'cidw-4w4-js-modale', get_template_directory_uri() . '/javascript/boite_modale.js',
-     array(), '1.0.0',
-     filemtime(get_template_directory() . '/javascript/boite_modale.js'),
-     true);
+    wp_register_script( 'cidw-4w4-js-modale', get_template_directory_uri() . '/javascript/boite_modale.js',
+                array(), '1.0.0',
+                filemtime(get_template_directory() . '/javascript/boite_modale.js'),
+                true);
 
-     wp_enqueue_script( 'cidw-4w4-caroussel', get_template_directory_uri() . '/javascript/caroussel.js',
-     array(), '1.0.0',
-     filemtime(get_template_directory() . '/javascript/caroussel.js'),
-     true);
+     wp_register_script( 'cidw-4w4-carrousel', get_template_directory_uri() . '/javascript/carrousel.js',
+                array(), '1.0.0',
+                filemtime(get_template_directory() . '/javascript/carrousel.js'),
+                true);
+
+    if(is_category(['cours','web','design','creation3d','utilitaire','jeu','video'])){
+        wp_enqueue_script( 'cidw-4w4-js-modale');
+    }
+    if(is_front_page()){
+        wp_enqueue_script( 'cidw-4w4-carrousel');
+    }
 }
 
 add_action("wp_enqueue_scripts", "cidw_4w4_enqueue");
