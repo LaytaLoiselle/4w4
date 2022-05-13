@@ -1,4 +1,7 @@
 (function(){
+       /**
+  * Boite modale qui s'ouvre pour afficher un contenu entier
+  *  */ 
     let boite__modale = document.querySelector('.boite__modale')
     let boite__modale__ferme = document.querySelector('.boite__modale__ferme')
     let boite__modale__texte = document.querySelector('.boite__modale__texte')
