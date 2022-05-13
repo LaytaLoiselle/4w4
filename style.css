@@ -846,6 +846,7 @@ COMPOSANTES
 .menu-accueil-container .menu, .menu-evenement-container .menu {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   flex-direction: column;
 }
 
@@ -873,7 +874,7 @@ COMPOSANTES
 
 .menu-accueil-container .menu .menu-item, .menu-evenement-container .menu .menu-item {
   list-style: none;
-  max-width: 300px;
+  width: 300px;
   padding: 15px;
   margin: 20px;
   box-shadow: 2px 2px 10px black;
