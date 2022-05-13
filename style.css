@@ -570,10 +570,19 @@ COMPOSANTES
 }
 
 .boite__carrousel {
-  width: 75%;
-  height: 75%;
-  top: 12.5%;
-  left: 12.5%;
+  width: 90%;
+  height: 30%;
+  top: 35%;
+  left: 5%;
+}
+
+@media screen and (min-width: 800px) {
+  .boite__carrousel {
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+  }
 }
 
 .boite__carrousel img {
@@ -581,6 +590,7 @@ COMPOSANTES
   width: 100%;
   height: 100%;
   position: absolute;
+  border-radius: 20px;
 }
 
 .boite__carrousel__nav {
