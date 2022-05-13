@@ -1150,12 +1150,18 @@ Galerie gutenberg de la page d'accueil
 */
 .galerie {
   width: 100%;
-  margin: auto;
+  margin: 5% auto;
+  background-color: black;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 @media screen and (min-width: 800px) {
   .galerie {
     width: 75%;
+    background-color: black;
+    padding: 15px;
+    box-sizing: content-box;
   }
 }
 

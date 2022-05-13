@@ -4,10 +4,20 @@ Galerie gutenberg de la page d'accueil
 
 .galerie{
     width: 100%;
-    margin: auto;
+    margin: 5% auto;
+
+    background-color: black;
+    padding: 15px;
+    box-sizing:border-box;
 
     @media screen and (min-width: $largeur__media--tablette) {
         width: 75%;
+
+
+        background-color: black;
+        padding: 15px;
+        box-sizing: content-box;
+
     }
 
     li:hover {
