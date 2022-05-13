@@ -525,11 +525,14 @@ COMPOSANTES
   background-color: #efffd1;
   border-radius: 20px;
   transform: scale(0);
-  transition: all 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
 }
 
 .boite__modale article, .boite__carrousel article {
-  padding: 20px 12%;
+  border-color: 2px solid red;
+  margin: 0 10%;
 }
 
 .boite__modale svg:hover, .boite__carrousel svg:hover {
@@ -550,20 +553,20 @@ COMPOSANTES
   z-index: 10;
 }
 
-@media screen and (min-width: 800px) {
-  .boite__modale, .boite__carrousel {
-    width: 50%;
-    height: 50%;
-    top: 25%;
-    left: 25%;
-  }
+.boite__modale {
+  width: 90vw;
+  height: 90%;
+  top: 5%;
+  left: 5%;
 }
 
-.boite__modale {
-  width: 50%;
-  height: 50%;
-  top: 25%;
-  left: 25%;
+@media screen and (min-width: 800px) {
+  .boite__modale {
+    width: 60%;
+    height: 60%;
+    top: 20%;
+    left: 20%;
+  }
 }
 
 .boite__carrousel {
