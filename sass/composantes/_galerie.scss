@@ -4,8 +4,13 @@ Galerie gutenberg de la page d'accueil
 
 .galerie{
     width: 100%;
+    margin: auto;
 
     @media screen and (min-width: $largeur__media--tablette) {
         width: 75%;
+    }
+
+    li:hover {
+        cursor: pointer;
     }
 }

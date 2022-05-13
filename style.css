@@ -531,8 +531,19 @@ COMPOSANTES
 }
 
 .boite__modale article, .boite__carrousel article {
-  border-color: 2px solid red;
   margin: 0 10%;
+}
+
+.boite__modale svg, .boite__carrousel svg {
+  width: 50px;
+  height: 50px;
+}
+
+@media screen and (min-width: 800px) {
+  .boite__modale svg, .boite__carrousel svg {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .boite__modale svg:hover, .boite__carrousel svg:hover {
@@ -608,6 +619,11 @@ COMPOSANTES
   width: 40px;
   height: 40px;
   border-radius: 100%;
+}
+
+.boite__carrousel__nav button:hover {
+  background-color: #1679ab;
+  cursor: pointer;
 }
 
 .boite__carrousel__nav button:focus {
@@ -1129,12 +1145,17 @@ Galerie gutenberg de la page d'accueil
 */
 .galerie {
   width: 100%;
+  margin: auto;
 }
 
 @media screen and (min-width: 800px) {
   .galerie {
     width: 75%;
   }
+}
+
+.galerie li:hover {
+  cursor: pointer;
 }
 
 /* ---------------------------------------------------------
