@@ -13,12 +13,13 @@
 ?>
 <?php get_header(); ?>
 <main class="site__main">
-    <section class="site_main_recherche">
-        <h1>Résultats de recherche</h1>
+<h3>Résultats de recherche</h3>
+    <section class="site_main_recherche padding_gauche">
+        
 <?php if(have_posts()):while(have_posts()):the_post(); ?>
 
 <a href="<?php echo get_permalink();?>">
-<h2><?php the_title(); ?></h2>
+<h4><?php the_title(); ?></h4>
 </a>
 <p>
 <?php echo wp_trim_words(get_the_content(),20); ?>
