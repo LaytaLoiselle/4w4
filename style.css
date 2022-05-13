@@ -775,6 +775,10 @@ COMPOSANTES
   left: 0;
 }
 
+#burger:hover {
+  cursor: pointer;
+}
+
 #chk-burger {
   display: none;
 }
