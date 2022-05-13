@@ -76,12 +76,20 @@
         left:20%;
     }
 
-    img {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        border-radius: 20px;
+    &__img {
+
+        img{
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            border-radius: 20px;
+            opacity: 0;
+            transition: all 1s ease-in-out;
+            &.img--ouvrir{
+                opacity: 1;
+            }
+        }
     }
 
     &__nav {
@@ -94,7 +102,7 @@
         left: 0;
         z-index: 9;
 
-        button {
+        .bouton {
             width: 40px;
             height: 40px;
             border-radius: 100%;
